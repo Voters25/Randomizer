@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+}
+
+.wripper {
+    background: rgb(117, 151, 190);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.randomString {
+    background: rgb(210, 231, 255);
+    height: 40%;
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 5px 0;
+    overflow: auto;
+}
+.inp {
+    max-width: 230px;
+    margin: 3px 0 3px 0;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 2px 0 2px 0;
+}
+.addBtn {
+
+}
+.randomBtn {
+    /* height: 100px; */
+}
+
+
+
+
+
+.proverbForTheDay {
+    background: rgb(210, 231, 255);
+    height: 40%;
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    margin-bottom: 10px;
+}
+.tooltiptext {
+    margin: -70px 0 0 5px;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

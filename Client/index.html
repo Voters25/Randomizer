@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Client/style.css" rel="stylesheet"></link>
+    <title>RANDOMAIZER</title>
+</head>
+<body>
+    <div class="wripper">
+        <div class="randomString">
+            <div class="inputs" id="inputs">
+                <input class="inp" type="text" id="1">
+                <input class="inp" type="text" id="2">
+            </div>
+            <div class="buttons">
+                <button class="addBtn" onclick="addInput()">Add</button>
+                <button class="randomBtn" onclick="startBarrel()">Random</button>
+            </div>
+            
+        </div>
+        <div class="proverbForTheDay">
+            <div class="tooltip">
+                <span class="tooltiptext">Следуй этому на протяжении всего дня</span>
+                <p>Пословица на день</p>
+            </div>
+            <button onclick="getproverb()">Клик</button>
+        </div>
+    </div>
+</body>
+    <script src="/Client/script.js"></script>
+</html>
