@@ -134,16 +134,20 @@ let startBarrel = () => {
 
             if (elem == "кушать") {
                 alert("Сесть на диету !");
+                reload();
             } else if (elem == "быть") {
                 alert("Будь, ну и кушай :)");
+                reload();
             } else if (elem == "мама" || elem == "папа") {
                 alert("Родителей не выбирают.");
+                reload();
             } else if (elem == "понедельник" || elem == "с понедельника" || elem == "в понедельник") {
                 alert("Зачем откладывать? Давай сегодня!");
+                reload();
             } else {
                 let result = varText[Math.floor(Math.random() * varText.length)];
                 alert(result);
-                document.location.reload();
+                reload();
             }
 
 
@@ -168,7 +172,9 @@ let addInput = () => {
 }
 
 
-
+let reload = () => {
+    document.location.reload();
+}
 
 
 /*=====================================================================================*/
