@@ -17,6 +17,10 @@ let startBarrel = () => {
                 alert("Родителей не выбирают.");
             } else if (elem == "понедельник" || elem == "с понедельника" || elem == "в понедельник") {
                 alert("Зачем откладывать? Давай сегодня!");
+            } else {
+                let result = varText[Math.floor(Math.random() * varText.length)];
+                alert(result);
+                document.location.reload();
             }
 
 
@@ -28,12 +32,6 @@ let startBarrel = () => {
                 varText.push(e);
             }       
         });
-
-
-
-    let result = varText[Math.floor(Math.random() * varText.length)];
-    alert(result);
-    document.location.reload();
 }
 
 let addInput = () => {
